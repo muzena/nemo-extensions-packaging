@@ -1,39 +1,17 @@
-STATUS
-------
+libnemo-extension Python bindings
+====================================
 
-nemo-wallpaper: (built in to Nemo)
-nemo-dropbox: functional
-nemo-fileroller: functional
-nemo-seahorse: functional
-nemo-share: functional
-nemo-pastebin: functional
-nemo-compare: functional
-nemo-python (python bindings for Nemo): functional
-nemo-terminal: functional (forked from nautilus-terminal-1.0.0)
-nemo-gtkhash: functional (forked from gtkhash-0.7.0)
-nemo-filename-repairer forked from (nautilus-filename-repairer-0.0.6) 
-nemo-image-converter forked from (nautilus-image-converter-0.3.1)
-nemo-audio-tab forked from nemo-media-columns and nemo-emblems
+These are unstable bindings for the Nemo extension library.
 
-NOT YET INCLUDED:
-----------------
+For examples and documentation check the examples sub directory.
 
-nemo-bzr: part of bzr-gtk, needs to be isolated from it
+As of nemo-python 0.7.0, scripts are also loaded from $XDG_DATA_DIR/nemo-python/extensions,
+which includes ~/.local/share and /usr/share (or whatever your $XDG_DATA_DIR is 
+set to).
 
-NAUTILUS EXTENSIONS MISSING IN NEMO:
----------------------------------
+Try to copy test.py to that directory for an example
 
-nautilus-actions                - nautilus extension to configure programs t
-nautilus-clamscan               - Antivirus scanning for Nautilus           
-nautilus-ideviceinfo            - utility showing information of idevices on
-nautilus-image-manipulator      - Resize and send images from Nautilus      
-nautilus-qdigidoc               - Nautilus file manager support for QDigiDoc
-nautilus-script-audio-convert   - A nautilus audio converter script         
-nautilus-script-collection-svn  - Nautilus subversion management scripts    
-nautilus-script-manager         - A simple management tool for nautilus scri
-nautilus-script-purrr           -                                        
-nautilus-scripts-manager        - simple tool for nautilus scripts managemen
-nautilus-search                 - Add gnome-search-tool to context menu
-nautilus-sendto-empathy         - GNOME multi-protocol chat and call client 
-nautilus-wipe                   - Secure deletion extension for Nautilus    
-
+Problems
+========
+It's currently not possible to reload the python file without
+restarting nemo.
