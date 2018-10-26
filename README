@@ -1,39 +1,27 @@
-STATUS
-------
+Hi Friend!
 
-nemo-wallpaper: (built in to Nemo)
-nemo-dropbox: functional
-nemo-fileroller: functional
-nemo-seahorse: functional
-nemo-share: functional
-nemo-pastebin: functional
-nemo-compare: functional
-nemo-python (python bindings for Nemo): functional
-nemo-terminal: functional (forked from nautilus-terminal-1.0.0)
-nemo-gtkhash: functional (forked from gtkhash-0.7.0)
-nemo-filename-repairer forked from (nautilus-filename-repairer-0.0.6) 
-nemo-image-converter forked from (nautilus-image-converter-0.3.1)
-nemo-audio-tab forked from nemo-media-columns and nemo-emblems
+This is *the* Dropbox extension for Nemo!!!
 
-NOT YET INCLUDED:
-----------------
+Now you can use your favorite sync, versioning, and backup software with GNU/Linux!
+Yes!! Radical!!! Gnarly!!!!
 
-nemo-bzr: part of bzr-gtk, needs to be isolated from it
+Check us out at http://www.dropbox.com/
 
-NAUTILUS EXTENSIONS MISSING IN NEMO:
----------------------------------
+<3,
+Rian Hunter and the rest of the Dropbox Team
 
-nautilus-actions                - nautilus extension to configure programs t
-nautilus-clamscan               - Antivirus scanning for Nautilus           
-nautilus-ideviceinfo            - utility showing information of idevices on
-nautilus-image-manipulator      - Resize and send images from Nautilus      
-nautilus-qdigidoc               - Nautilus file manager support for QDigiDoc
-nautilus-script-audio-convert   - A nautilus audio converter script         
-nautilus-script-collection-svn  - Nautilus subversion management scripts    
-nautilus-script-manager         - A simple management tool for nautilus scri
-nautilus-script-purrr           -                                        
-nautilus-scripts-manager        - simple tool for nautilus scripts managemen
-nautilus-search                 - Add gnome-search-tool to context menu
-nautilus-sendto-empathy         - GNOME multi-protocol chat and call client 
-nautilus-wipe                   - Secure deletion extension for Nautilus    
+Building Dropbox Nemo Extension From Source Tarball
+--------------------------------------------------
 
+You will need the following packages (or equivalent):
+
+libnemo-extension-dev
+
+In the nemo-dropbox dir just do:
+$ ./configure
+$ make
+$ sudo make install
+
+After installing the package you must restart Nemo. You can do that by issuing the following command (note: if you're running compiz, doing so may lock up your computer - log out and log back in instead):
+
+$ killall nemo
