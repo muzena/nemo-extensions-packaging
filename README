@@ -1,39 +1,42 @@
-STATUS
-------
+==============================================================================
+=        Nemo Terminal - Embedded terminal for the Nemo file browser         =
+==============================================================================
 
-nemo-wallpaper: (built in to Nemo)
-nemo-dropbox: functional
-nemo-fileroller: functional
-nemo-seahorse: functional
-nemo-share: functional
-nemo-pastebin: functional
-nemo-compare: functional
-nemo-python (python bindings for Nemo): functional
-nemo-terminal: functional (forked from nautilus-terminal-1.0.0)
-nemo-gtkhash: functional (forked from gtkhash-0.7.0)
-nemo-filename-repairer forked from (nautilus-filename-repairer-0.0.6) 
-nemo-image-converter forked from (nautilus-image-converter-0.3.1)
-nemo-audio-tab forked from nemo-media-columns and nemo-emblems
+Nemo Terminal is an embedded terminal for Nemo, the Cinnamon file manager.
 
-NOT YET INCLUDED:
-----------------
+Nemo Terminal follows your navigation in a shell accessible by hotkey (F4, by
+default) in a resizeable pane in Nemo. It eliminates the grunt work of
+navigating multiple folder levels just to run a single shell command and cuts
+down on window clutter from multiple terminals and file managers.
 
-nemo-bzr: part of bzr-gtk, needs to be isolated from it
+Features include:
+    * Automatically follows folder navigation.
+        * Even onto GVFS mounted volumes.
+    * Copy/Paste and Paste Filename support.
+    * Drag/Drop acquisition of filenames from Nemo.
 
-NAUTILUS EXTENSIONS MISSING IN NEMO:
----------------------------------
+Features in development:
+    * Two-way folder navigation - Nemo will follow the current directory in the
+      terminal.
 
-nautilus-actions                - nautilus extension to configure programs t
-nautilus-clamscan               - Antivirus scanning for Nautilus           
-nautilus-ideviceinfo            - utility showing information of idevices on
-nautilus-image-manipulator      - Resize and send images from Nautilus      
-nautilus-qdigidoc               - Nautilus file manager support for QDigiDoc
-nautilus-script-audio-convert   - A nautilus audio converter script         
-nautilus-script-collection-svn  - Nautilus subversion management scripts    
-nautilus-script-manager         - A simple management tool for nautilus scri
-nautilus-script-purrr           -                                        
-nautilus-scripts-manager        - simple tool for nautilus scripts managemen
-nautilus-search                 - Add gnome-search-tool to context menu
-nautilus-sendto-empathy         - GNOME multi-protocol chat and call client 
-nautilus-wipe                   - Secure deletion extension for Nautilus    
+This package is a fork of the Nautilus Terminal project to support the Nemo
+file browser and includes various improvements and bugfixes.
 
+Credit for the original work goes to the Nautilus Terminal authors
+(see AUTHORS for more detail).
+
+Source code may be obtained for nemo-terminal and nautilus-terminal from their
+websites:
+
+Nemo Terminal Web Site: http://github.com/linuxmint/nemo-extensions/
+
+Nautilus Terminal Web Site: http://projects.flogisoft.com/nautilus-terminal/
+
+Dependencies:
+-------------
+    * Python (>= 2.6) <http://python.org/>
+    * GObject Introspection <https://wiki.gnome.org/GObjectIntrospection>
+    * VTE <https://wiki.gnome.org/Apps/Terminal/VTE>
+    * Nemo <https://github.com/linuxmint/nemo>
+    * Nemo Python <https://github.com/linuxmint/nemo-extensions/tree/master/nemo-python>
+    * PyXDG (optional) <http://www.freedesktop.org/wiki/Software/pyxdg>

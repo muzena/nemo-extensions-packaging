@@ -1,2 +1,0 @@
-option('gtk_doc', type : 'boolean', value : false,
-       description: 'Generate API reference (requires GTK-Doc)')
